@@ -11,16 +11,21 @@ gulp.task('browserSync', ['sass'],  function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('app/scss/style.sass')
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'app/assets/scss/*.sass'])
         .pipe(sass())
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('app/assets/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
 });
 
-gulp.task('watch', ['browserSync'], function () {
-    gulp.watch('app/scss/style.sass', ['sass']);
+gulp.task('js', function () {
+   return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js'])
+       .pipe(gulp.dest("app/assets/js"))
+});
+
+gulp.task('start', ['browserSync'], function () {
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'app/assets/scss/*.sass'], ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
