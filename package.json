@@ -1,0 +1,22 @@
+{
+  "name": "pwa",
+  "version": "0.0.1",
+  "description": "Landstede app",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "install": "^0.12.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.compict.nl:8888/landstedeapp/landstedeapp.git"
+  },
+  "author": "Tim van Beek",
+  "license": "ISC"
+}
