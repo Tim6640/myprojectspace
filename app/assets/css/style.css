@@ -1,0 +1,270 @@
+.test {
+  background-color: blue;
+  width: 2000px;
+  height: 2000px; }
+
+.button {
+  width: 80%;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  bottom: 20px;
+  display: block;
+  margin-left: 7%;
+  margin-right: 5%; }
+
+/*login scherm*/
+.login-background-image {
+  height: 100%;
+  background-color: green; }
+  .login-background-image .kop {
+    margin-top: 10%;
+    font-weight: 600;
+    text-align: center; }
+  .login-background-image .kop2 {
+    font-size: 28px;
+    margin-top: 12%;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; }
+  .login-background-image .form {
+    margin-top: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; }
+  .login-background-image .form-index {
+    border: none;
+    border-bottom: 1px solid black;
+    color: #555;
+    padding: 10px 0px; }
+  .login-background-image .btn-login {
+    width: 60px;
+    height: 60px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(223deg, #17BBD2, #287695);
+    border-radius: 30px;
+    margin-left: 70%;
+    margin-top: 10%; }
+  .login-background-image .btn-reg {
+    color: white;
+    background-image: linear-gradient(258deg, #17BBD2, #287695);
+    position: absolute; }
+
+/*register scherm*/
+.register-background-image {
+  background-image: linear-gradient(204deg, #17BBD2, #287695);
+  height: 695px;
+  color: white; }
+  .register-background-image .form-register {
+    border: none;
+    border-bottom: 1px solid #287695;
+    color: #555;
+    padding: 10px 0px;
+    background-color: transparent; }
+  .register-background-image .form-register::-webkit-input-placeholder {
+    color: white; }
+  .register-background-image .form-register::-moz-placeholder {
+    color: white; }
+  .register-background-image .form-register:-ms-input-placeholder {
+    color: white; }
+  .register-background-image .form-register::placeholder {
+    color: white; }
+  .register-background-image .form-register:focus {
+    background: transparent; }
+  .register-background-image .btn-reg {
+    color: white;
+    background-color: #287695;
+    position: absolute;
+    bottom: 14%; }
+  .register-background-image .btn-aan {
+    color: #287695;
+    background-color: white;
+    position: absolute; }
+  .register-background-image .kop {
+    font-size: 28px;
+    padding-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; }
+  .register-background-image .kop1 {
+    font-size: 16px;
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 30px; }
+  .register-background-image .form {
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; }
+  .register-background-image .img {
+    transform: rotate(180deg);
+    margin-left: -75px;
+    margin-right: 60px; }
+  .register-background-image .imgr {
+    margin-left: 15px; }
+
+/*welkom scherm*/
+.welkom-background-image {
+  background-image: linear-gradient(204deg, #17A337, #8BEB7A);
+  height: 623px;
+  color: white;
+  /*uitleg scherm*/ }
+  .welkom-background-image .kop {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 18px; }
+  .welkom-background-image .kop1 {
+    font-weight: bold;
+    font-size: 62px;
+    text-align: center; }
+  .welkom-background-image .btn-skip {
+    color: white;
+    background-color: #51AF52;
+    position: absolute;
+    bottom: 14%; }
+  .welkom-background-image .btn-uitleg {
+    color: #42BE50;
+    background-color: white;
+    position: absolute; }
+
+.uitleg-background-image .btn-skip {
+  margin-top: 42.5%;
+  color: #9895A0;
+  background-color: white;
+  position: absolute;
+  bottom: 13%; }
+
+.uitleg-background-image .btn-verder {
+  color: white;
+  background-image: linear-gradient(258deg, #17BBD2, #287695);
+  position: absolute; }
+
+.uitleg-background-image .btn-verder1 {
+  margin-top: 59%;
+  color: white;
+  background-image: linear-gradient(258deg, #17BBD2, #287695);
+  position: absolute; }
+
+.uitleg-background-image .kop {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 24px;
+  color: #287695; }
+
+.uitleg-background-image .uitleg {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-size: 16px; }
+
+.uitleg-background-image .img {
+  text-align: center; }
+
+/*dashboard scherm*/
+.dashboard-background-image .kop {
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px; }
+
+.dashboard-background-image .welkom {
+  font-weight: 500;
+  margin-left: 5%;
+  font-size: 28px;
+  margin-top: 10%; }
+
+.dashboard-background-image .btn-reg {
+  background-image: linear-gradient(254deg, #17BBD2, #287695);
+  color: white;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 200px; }
+  .dashboard-background-image .btn-reg img {
+    margin-left: 20px; }
+
+.dashboard-background-image .btn-qr {
+  width: 60px;
+  background-image: linear-gradient(180deg, #17BBD2, #287695);
+  margin-top: -30px;
+  margin-left: 75%; }
+
+.dashboard-background-image .footertext {
+  width: 101%;
+  height: 10%;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  display: block;
+  text-align: center;
+  bottom: -4px;
+  -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65); }
+
+.dashboard-background-image .bolletje {
+  border: none;
+  background-color: white;
+  float: right;
+  margin-right: 5%; }
+
+.dashboard-background-image .btn-menu {
+  width: 45%;
+  background-color: white;
+  height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 3%;
+  border: none; }
+
+.dashboard-background-image .aan {
+  border-bottom: 5px solid #17BBD2; }
+
+.dashboard-background-image .shadow {
+  -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  margin-left: -4%;
+  margin-right: -4%;
+  padding-top: 20px; }
+
+/*herinnering scherm*/
+.herinnering-background-image .kop {
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px; }
+
+.herinnering-background-image .bolletje {
+  border: none;
+  background-color: white;
+  float: right;
+  margin-right: 5%; }
+
+.herinnering-background-image .btn-menu {
+  width: 45%;
+  background-color: white;
+  height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 3%;
+  border: none; }
+
+.herinnering-background-image .shadow {
+  -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.65);
+  margin-left: -4%;
+  margin-right: -4%;
+  padding-top: 20px; }
+
+.herinnering-background-image .col-6 {
+  text-align: center; }
+  .herinnering-background-image .col-6 .aan {
+    border-bottom: 5px solid #17BBD2; }
