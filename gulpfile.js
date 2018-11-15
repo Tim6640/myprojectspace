@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var mustache = require('gulp-mustache');
 
 gulp.task('browserSync', ['sass', 'js'],  function () {
     browserSync.init({
@@ -28,4 +29,11 @@ gulp.task('start', ['browserSync'], function () {
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'app/assets/scss/*.sass'], ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
+
+gulp.src("./templates/*.mustache")
+    .pipe(mustache({
+        msg: "Hello Gulp!"
+    }))
+    .pipe(gulp.dest("app/test"));
+
 
