@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
-gulp.task('browserSync', ['sass'],  function () {
+gulp.task('browserSync', ['sass', 'js'],  function () {
     browserSync.init({
         server: {
             baseDir: 'app'
@@ -20,7 +20,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function () {
-   return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js'])
+   return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/pwacompat/pwacompat.min.js'])
        .pipe(gulp.dest("app/assets/js"))
 });
 

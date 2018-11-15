@@ -1,6 +1,7 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'MijnLandstede';
 var urlsToCache = [
-    '/'
+    '/',
+    '/assets/css/style.css'
 ];
 
 self.addEventListener('install', function(event) {
@@ -12,4 +13,32 @@ self.addEventListener('install', function(event) {
                 return cache.addAll(urlsToCache);
             })
     );
+});
+
+self.addEventListener('fetch', function(event){
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response){
+                if(response) {
+                    return response;
+                }
+                return fetch(event.request);
+            })
+    );
+});
+
+self.addEventListener('activate', function(event) {
+   var cacheWhitelist = ['MijnLandstede']
+
+   event.waitUntil(
+       caches.keys().then(function(cachNames){
+           return Promise.all(
+               cachNames.map(function(cachesName) {
+                   if(cacheWhitelist.indexOf(cachesName) === -1) {
+                       return caches.delete(cachesName);
+                   }
+               })
+           )
+       })
+   )
 });

@@ -1,0 +1,23 @@
+{
+  "name": "Mijn Landstede",
+  "short_name": "MijnLandstede",
+  "description": "Mijn landstede app",
+  "lang": "nl",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#E6E6FA",
+  "background_color": "#E6E6FA",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/assets/icons/logo_landstede_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icons/logo_landstede_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
